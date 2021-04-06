@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_aid_design/src/UI/home_screen.dart';
 import 'package:home_aid_design/src/Utils/scaffold.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -6,10 +7,7 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppScaffold(
-        body: Container(
-      color: Colors.green,
-    ));
+    return HomeContents();
   }
 }
 

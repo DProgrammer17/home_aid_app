@@ -7,7 +7,11 @@ class AppScaffold extends StatefulWidget {
   final Function onPressed;
   final Function onTap;
   final Widget body;
-  AppScaffold({this.onPressed, @required this.body, this.onTap});
+  AppScaffold({
+    this.onPressed,
+    @required this.body,
+    this.onTap,
+  });
 
   @override
   _AppScaffoldState createState() => _AppScaffoldState();
@@ -98,7 +102,7 @@ class _AppScaffoldState extends State<AppScaffold> {
         onTap: (index) {
           bottomTapped(index);
         },
-        unselectedItemColor: Colors.lightBlue,
+        unselectedItemColor: Colors.blueGrey,
       ),
     );
   }

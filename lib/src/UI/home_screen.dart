@@ -6,10 +6,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppScaffold(
-        body: Container(
-      color: Colors.blue,
-    ));
+    return HomeContents();
   }
 }
 
