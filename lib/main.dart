@@ -31,3 +31,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+//TODO: Start here.
+//Refactor buttons
+//Add bottom nav to the second appliances screen and the add device screen
+//Yeah i'm sure you can figure everything out, if you need anything call me.

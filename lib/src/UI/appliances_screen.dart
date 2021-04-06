@@ -24,6 +24,17 @@ class ApplianceContents extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: ListView(
           children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Center(
+                  child: Text(
+                'APPLIANCES',
+                style: TextStyle(
+                    color: Colors.blue,
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.bold),
+              )),
+            ),
             SizedBox(
               child: Divider(
                 color: Colors.black,
@@ -142,12 +153,20 @@ class ApplianceContents extends StatelessWidget {
                 thickness: 1.1,
               ),
             ),
-// Align(
-//   alignment: Alignment.bottomRight,
-//   child: FloatingActionButton(onPressed: () {
-//     print('Ebun Money');
-//   }),
-// ),
+            //TODO: Based on the implementation of the bottomNavBar the FAB cant sit on it, go through the code.
+            Align(
+              alignment: Alignment.bottomRight,
+              child: FloatingActionButton(
+                backgroundColor: Colors.blue,
+                onPressed: () {
+                  print('Ebun Money');
+                },
+                child: Icon(
+                  Icons.add,
+                  size: 30.0,
+                ),
+              ),
+            ),
           ],
         ),
       ),
